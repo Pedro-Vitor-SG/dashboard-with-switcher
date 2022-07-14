@@ -12,9 +12,9 @@
       href="./images/favicon-32x32.png"
     />
 
-    <title>Frontend Mentor | [Challenge Name Here]</title>
+    <title>Dashboard with switcher</title>
     <link rel="stylesheet" href="./css/style.css" />
-    
+
     <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
     <style>
       .attribution {
@@ -25,8 +25,10 @@
         color: hsl(228, 45%, 44%);
       }
     </style>
+
+    <script src="./js/script.js" defer></script>
   </head>
-  <body class="dark">
+  <body >
     <header class="header container">
       <div class="container-resume">
         <h2>Social Media Dashboard</h2>
@@ -68,19 +70,19 @@
         </span>
       </div>
 
-        <div class="card insta">
-          <p class="social-name">
-            <img src="./images/icon-instagram.svg" alt="icon-facebook" />
-            <span>@realnathanf</span>
-          </p>
-          <div class="followers">
-            <p class="number">11k</p>
-            <span>Followers</span>
-          </div>
-          <span class="number-today number-green">
-            <img src="./images/icon-up.svg" alt="icon-up" /> 1099 Today
-          </span>
+      <div class="card insta">
+        <p class="social-name">
+          <img src="./images/icon-instagram.svg" alt="icon-facebook" />
+          <span>@realnathanf</span>
+        </p>
+        <div class="followers">
+          <p class="number">11k</p>
+          <span>Followers</span>
         </div>
+        <span class="number-today number-green">
+          <img src="./images/icon-up.svg" alt="icon-up" /> 1099 Today
+        </span>
+      </div>
 
       <div class="card yt">
         <p class="social-name">
@@ -100,113 +102,117 @@
     <section class="overview container">
       <h3>Overview - Today</h3>
 
-     <div class="overview-cards">
-      <div class="card-overview">
-        <p class="metrics-type">
-          <span> Page Views </span>
-          <img src="./images/icon-facebook.svg" alt="icon-facebook" />
-        </p>
-        <p class="metrics-number">
-          <span class="grow">87</span>
-          <span class="number-green"><img src="./images/icon-up.svg" alt="icon-up" /> 3%</span>
-        </p>
-      </div>
+      <div class="overview-cards">
+        <div class="card-overview">
+          <p class="metrics-type">
+            <span> Page Views </span>
+            <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+          </p>
+          <p class="metrics-number">
+            <span class="grow">87</span>
+            <span class="number-green"
+              ><img src="./images/icon-up.svg" alt="icon-up" /> 3%</span
+            >
+          </p>
+        </div>
 
-      <div class="card-overview">
-        <p class="metrics-type">
-          <span> Likes </span>
-          <img src="./images/icon-facebook.svg" alt="icon-facebook" />
-        </p>
-        <p class="metrics-number">
-          <span class="grow">52</span>
-          <span class="number-red"><img src="./images/icon-down.svg" alt="icon-up" />2%</span>
-        </p>
-      </div>
+        <div class="card-overview">
+          <p class="metrics-type">
+            <span> Likes </span>
+            <img src="./images/icon-facebook.svg" alt="icon-facebook" />
+          </p>
+          <p class="metrics-number">
+            <span class="grow">52</span>
+            <span class="number-red"
+              ><img src="./images/icon-down.svg" alt="icon-up" />2%</span
+            >
+          </p>
+        </div>
 
-      <div class="card-overview">
-        <p class="metrics-type">
-          <span> Likes </span>
-          <img src="./images/icon-instagram.svg" alt="icon-instagram" />
-        </p>
-        <p class="metrics-number">
-          <span class="grow">5462</span>
-          <span class="number-green"
-            ><img src="./images/icon-up.svg" alt="icon-up" />
-            2257%
-          </span>
-        </p>
-      </div>
+        <div class="card-overview">
+          <p class="metrics-type">
+            <span> Likes </span>
+            <img src="./images/icon-instagram.svg" alt="icon-instagram" />
+          </p>
+          <p class="metrics-number">
+            <span class="grow">5462</span>
+            <span class="number-green"
+              ><img src="./images/icon-up.svg" alt="icon-up" />
+              2257%
+            </span>
+          </p>
+        </div>
 
-      <div class="card-overview">
-        <p class="metrics-type">
-          <span> Profile Views </span>
-          <img src="./images/icon-instagram.svg" alt="icon-instagram" />
-        </p>
-        <p class="metrics-number">
-          <span class="grow"> 52k </span>
-          <span class="number-green"
-            ><img src="./images/icon-up.svg" alt="icon-up" />
-            1375%
-          </span>
-        </p>
-      </div>
+        <div class="card-overview">
+          <p class="metrics-type">
+            <span> Profile Views </span>
+            <img src="./images/icon-instagram.svg" alt="icon-instagram" />
+          </p>
+          <p class="metrics-number">
+            <span class="grow"> 52k </span>
+            <span class="number-green"
+              ><img src="./images/icon-up.svg" alt="icon-up" />
+              1375%
+            </span>
+          </p>
+        </div>
 
-      <div class="card-overview">
-        <p class="metrics-type">
-          <span> Retweets </span>
-          <img src="./images/icon-twitter.svg" alt="icon-twitter" />
-        </p>
-        <p class="metrics-number">
-          <span class="grow"> 117 </span>
-          <span class="number-green"
-            ><img src="./images/icon-up.svg" alt="icon-up" />
-            303%
-          </span>
-        </p>
-      </div>
+        <div class="card-overview">
+          <p class="metrics-type">
+            <span> Retweets </span>
+            <img src="./images/icon-twitter.svg" alt="icon-twitter" />
+          </p>
+          <p class="metrics-number">
+            <span class="grow"> 117 </span>
+            <span class="number-green"
+              ><img src="./images/icon-up.svg" alt="icon-up" />
+              303%
+            </span>
+          </p>
+        </div>
 
-      <div class="card-overview">
-        <p class="metrics-type">
-          <span> Likes </span>
-          <img src="./images/icon-twitter.svg" alt="icon-twitter" />
-        </p>
-        <p class="metrics-number">
-          <span class="grow"> 507 </span>
-          <span class="number-green"
-            ><img src="./images/icon-up.svg" alt="icon-up" />
-            553%
-          </span>
-        </p>
-      </div>
+        <div class="card-overview">
+          <p class="metrics-type">
+            <span> Likes </span>
+            <img src="./images/icon-twitter.svg" alt="icon-twitter" />
+          </p>
+          <p class="metrics-number">
+            <span class="grow"> 507 </span>
+            <span class="number-green"
+              ><img src="./images/icon-up.svg" alt="icon-up" />
+              553%
+            </span>
+          </p>
+        </div>
 
-      <div class="card-overview">
-        <p class="metrics-type">
-          <span> Likes </span>
-          <img src="./images/icon-youtube.svg" alt="icon-youtube" />
-        </p>
-        <p class="metrics-number">
-          <span class="grow"> 107 </span>
-          <span class="number-red"
-            ><img src="./images/icon-down.svg" alt="icon-up" />
-            19%
-          </span>
-        </p>
-      </div>
+        <div class="card-overview">
+          <p class="metrics-type">
+            <span> Likes </span>
+            <img src="./images/icon-youtube.svg" alt="icon-youtube" />
+          </p>
+          <p class="metrics-number">
+            <span class="grow"> 107 </span>
+            <span class="number-red"
+              ><img src="./images/icon-down.svg" alt="icon-up" />
+              19%
+            </span>
+          </p>
+        </div>
 
-      <div class="card-overview">
-        <p class="metrics-type">
-          <span> Total Views </span>
-          <img src="./images/icon-youtube.svg" alt="icon-youtube" />
-        </p>
-        <p class="metrics-number">
-          <span class="grow"> 1407 </span>
-          <span class="number-red"
-            ><img src="./images/icon-down.svg" alt="icon-up" />
-            12%
-          </span>
-        </p>
+        <div class="card-overview">
+          <p class="metrics-type">
+            <span> Total Views </span>
+            <img src="./images/icon-youtube.svg" alt="icon-youtube" />
+          </p>
+          <p class="metrics-number">
+            <span class="grow"> 1407 </span>
+            <span class="number-red"
+              ><img src="./images/icon-down.svg" alt="icon-up" />
+              12%
+            </span>
+          </p>
+        </div>
       </div>
-     </div>
     </section>
 
     <!-- <div class="attribution">
